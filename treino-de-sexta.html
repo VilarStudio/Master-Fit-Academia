@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,400;0,700;0,800;1,200;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <title>MASTER FIT ACADEMIA</title>
+    <link rel="stylesheet" href="styles/treinos.css">
+    <link rel="stylesheet" href="styles/remixicon/remixicon.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <section class="treinos">
+            <a href="index.html"><i class="ri-arrow-left-line"></i></a>
+            <a href="#" class="logo">
+                <img src="imgens/masterfit.PNG" alt="logo">
+            </a>
+        </section>
+    </header>
+
+    <div class="home-videos">
+        <section class="list-treinos">
+            <div>
+                <h2>TREINO DE SEXTA</h2>
+                <h4>(GLÚTEO, POSTERIORES & PANTURRILHA)</h4><br>
+                <a href="#v1">Bulgaro 4x12</a>
+                <a href="#v2">Elevação pélvica 4x12</a>
+                <a href="#v3">Cadeira abdutora 4x12</a>
+                <a href="#v4">Mesa flexora 4x12</a>
+                <a href="#v5">Coice na polia 4x12</a>
+                <a href="#v6">Panturrilha sentado 4x15</a>
+                <a href="#v7">Panturrilha em pé no step 4x15</a>
+            </div>
+
+        </section>
+        <section class="videos" id="#home">
+            <div class="content2">
+                <div class="card">
+                    <iframe id="v1" width="300" height="533"
+                        src="https://www.youtube.com/embed/R5d4KvNuusI?si=VNyCcSHxobFTxxmm&enablejsapi=1"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3>Bulgaro 4x12</h3>
+                </div>
+                <div class="card">
+                    <iframe id="v2" width="300" height="533"
+                        src="https://www.youtube.com/embed/nYN0fbAKAuw?si=Hjgc21dks3QP3tO-&enablejsapi=1"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3>Elevação pélvica 4x12</h3>
+                </div>
+                <div class="card">
+                    <iframe id="v3" width="300" height="533"
+                        src="https://www.youtube.com/embed/S9OtoSJdMWo?si=V7WbYktvYi5TVP4q&enablejsapi=1"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3>Cadeira abdutora 4x12</h3>
+                </div>
+                <div class="card">
+                    <iframe id="v4" width="300" height="533"
+                        src="https://www.youtube.com/embed/sLaKNzkH4DY?si=bF5iNx9WN5uk_kKc&enablejsapi=1"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3>Mesa flexora 4x12</h3>
+                </div>
+                <div class="card">
+                    <iframe id="v5" width="300" height="533"
+                        src="https://www.youtube.com/embed/P4eV884PUcA?si=tfkSmg31Z1JaCtHs&enablejsapi=1"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3>Coice na polia 4x122</h3>
+                </div>
+                <div class="card">
+                    <iframe id="v6" width="300" height="533"
+                        src="https://www.youtube.com/embed/oK4A2vIb74c?si=jNlpULQDxRM2ujcS&enablejsapi=1"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3>Panturrilha sentado 4x15</h3>
+                </div>
+                <div class="card">
+                    <iframe id="v7" width="300" height="533"
+                        src="https://www.youtube.com/embed/mKzYZTUbjtQ?si=1KKQbg-f4s5r3Z07&enablejsapi=1"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3>Panturrilha em pé no step 4x15</h3>
+                </div>
+
+
+            </div>
+        </section>
+        <footer class="footer2">
+            <section class="redes2">
+                <h4></h4>
+                <div class="rodape2">
+                    <a href="https://www.instagram.com/masterrfitacademia/"><i class="ri-instagram-fill"></i></a><br>
+                    <a href="https://wa.me/5598984626810"><i class="ri-whatsapp-fill"></i></a><br>
+                </div>
+            </section>
+
+
+    </div>
+
+    </footer>
+
+    <script>
+        let players = [];
+
+        // Carregar a API do YouTube
+        function onYouTubeIframeAPIReady() {
+            players.push(new YT.Player('v1', {
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            }));
+            players.push(new YT.Player('v2', {
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            }));
+            players.push(new YT.Player('v3', {
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            }));
+            players.push(new YT.Player('v4', {
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            }));
+            players.push(new YT.Player('v5', {
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            }));
+            players.push(new YT.Player('v6', {
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            }));
+            players.push(new YT.Player('v7', {
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            }));
+            
+        }
+
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING) {
+                // Pausar todos os outros players
+                players.forEach(p => {
+                    if (p !== event.target) {
+                        p.pauseVideo();
+                    }
+                });
+            }
+        }
+
+        // Inserir a API do YouTube dinamicamente
+        let tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        let firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    </script>
+
+
+</body>
+
+</html>

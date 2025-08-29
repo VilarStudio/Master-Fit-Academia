@@ -1,0 +1,183 @@
+:root {
+    --laraja: #fa4d08;
+    --preto: #000000;
+    --preto-fosco: #363636;
+    --branco: #ffffff;
+    --cinza: #c0c0c0;
+    --border: 0.1rem solid rgba(253, 80, 0, 0.702);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 60px;
+}
+
+.logo img {
+    width: 110px;
+    height: 60px;
+}
+
+body {
+    background: var(--preto);
+    padding-top: 2rem;
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 50px;
+    background: var(--preto);
+
+}
+
+.navbar a {
+    margin: 0rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--branco);
+}
+
+.navbar a:hover {
+    color: #fa8908;
+    border-bottom: 0.1rem solid rgba(253, 80, 0, 0.878);
+
+}
+
+/*.home-container {
+    background: url("/imgens/ModeloMasterFit02.png");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}*/
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.home-container section a {
+    display: block;
+    font-weight: bold;
+    color: var(--branco);
+    line-height: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.home-container section a:hover {
+    color: #fa8908;
+}
+
+#T01 {
+    margin-top: 1rem;
+}
+
+.content {
+    height: 400px;
+    max-width: 60rem;
+}
+
+.content h3 {
+    margin: top -9rem;
+    color: #fa4d08;
+    font-size: 3rem;
+
+}
+
+html,
+body {
+    height: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+.footer {
+    margin-top: 0px;
+    background: var(--laraja);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--branco);
+}
+
+/* Ajustes no rodapé */
+.footer section {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background: var(--laraja);
+}
+
+.footer section h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    margin-top: -4rem;
+    margin-bottom: 1rem;
+}
+
+.footer section a {
+    line-height: 1rem;
+    margin: auto;
+    color: #000000;
+    font-size: 40px;
+
+
+}
+
+.footer section a:hover {
+    color: #ffffff;
+}
+
+.rodape{
+    display: flex;
+    color: var(--branco);
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+   
+}
